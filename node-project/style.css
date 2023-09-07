@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* HEADER */
+
+#header {
+  background: #333;
+  text-align: end;
+}
+
+/* CONTAINER */
+
+.container {
+  position: relative;
+  top: 0px;
+  left: 0;
+  height: 1200px;
+}
+
+/* SIDE BAR */
+
+.side-nav {
+  width: 10vw;
+  background: #333;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.side-nav-content {
+  font-size: 2em;
+}
+
+#sort-by-select {
+  margin-left: 4%;
+  width: 9vw;
+  border: none;
+  outline: none;
+  background-color: #828282;
+  color: #343839;
+}
+
+.artist-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.logo {
+  display: block;
+  padding: 0%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+.logo-img {
+  padding: 10px;
+  width: 9vw;
+}
+
+.add-img {
+  margin-left: 30%;
+  width: 4vw;
+}
+
+.logo-img:hover {
+  cursor: default;
+}
+
+.grid-item {
+  box-shadow: 1px 1px 8px rgba(42, 34, 105, 0.25);
+  padding: 0;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  box-shadow: 0 8px 16px 0 var(--green);
+}
+
+#input-search {
+  margin-left: 4%;
+  text-align: center;
+  width: 9vw;
+  color: #1e2020;
+  background-color: #828282;
+  font-size: small;
+}
+::placeholder {
+  color: #252424;
+}
+
+.grid-item p {
+  font-size: 15px;
+  margin: 0.3em 0;
+  text-align: center;
+}
+
+/* ARTIST LIST */
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #333;
+}
+
+li {
+  font-size: 80%;
+  position: relative;
+  padding-left: 30px;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #333;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #666;
+  user-select: none;
+  overflow: hidden;
+  color: #ccd5da;
+}
+
+li:before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 50%;
+  margin-top: -10px;
+  border-left: 20px solid #ccc;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+li:after {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 50%;
+  margin-top: -10px;
+  border-left: 5px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  color: #1db954;
+}
+
+li:hover {
+  border-color: #777;
+  box-shadow: 3px 3px 5px #333;
+}
+
+li:hover:before {
+  border-left-color: #777;
+}
+
+li:active {
+  background: #7e7c7c;
+  box-shadow: inset 0 1px 1px #666;
+  color: #c2c6cf;
+}
+
+/* INNER CONTAINER */
+
+.inner-container {
+  display: flex;
+  flex-flow: column;
+  min-width: 85%;
+  height: 100%;
+  background-color: #828282;
+}
+
+/* BUTTONS */
+Button {
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: #525151;
+  color: #ccd5da;
+  padding: 5px 10px;
+}
+
+Button:active {
+  color: #abb5bb;
+  background-color: #252525;
+}
+
+/* DIALOG */
+
+Dialog {
+  color: #252424;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+  left: 27%;
+  z-index: 50;
+  width: 15vw;
+  background-color: #828282;
+  border: 2px solid black;
+  margin: 15vw 15vw;
+}
+
+.input-dialog {
+  text-align: center;
+  width: 12vw;
+}

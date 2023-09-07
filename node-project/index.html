@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width-device-width, initial-scale = 1,0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f7c4436a7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Roboto+Mono&display=swap");
+    </style>
+  </head>
+  <body class="body">
+    <div id="header">
+      <h2 name = "header-title">Artists</h2>
+    </div>
+    <main>
+      <div class="container">
+        <div class="side-nav">
+          <div class="side-nav-content">
+            <section name = "side-nav-section">
+              <a href="#" class="logo">
+                <img src="logos/logo.webp" class="logo-img" />
+              </a>
+              <a href="#" class="add">
+                <img
+                  src="logos/add.png"
+                  id="add-artist-button"
+                  class="add-img"
+                />
+              </a>
+              </form>
+              <input type="search" id="input-search" placeholder="Search By Artist" />
+              <select id="sort-by-select" name  = "sort-by-selector">
+                <option>Sort By:</option>
+                <option >Artist Name(a-z)</option>
+                <option>Artist Name(z-a)</option>
+                <option>Year Started</option>
+                <option>Artist Added</option>
+                <option>Favorites(a-z)</option>
+                <option>Favorites(z-a)</option>
+              </select>
+              <ul id="artist-list"></ul>
+              <section id="artists"></section>
+            </section></ul>
+          </div>
+        </div>
+
+        <div class="inner-container">
+          <section>
+            <h2>Artist Information</h2>
+            <section id="artists-info" class="grid-container"></section>
+          </section>
+        </div>
+      </div>
+    </main>
+    <dialog id="dialog-add-artist">
+      <h3>Add New Artist</h3>
+      <form id="form-add-artist" method="dialog">
+        <label id="title-create">Artist Name:</label>
+        <input
+          type="text"
+          id="Name"
+          name="name"
+          placeholder="Artist Name"
+          class ="input-dialog"
+        />
+        <label for="image">Image:</label>
+        <input
+          type="URL"
+          id="image"
+          name="image"
+          placeholder="please Enter URL"
+          class ="input-dialog"
+        />
+        <label id="birthdate-create">Birthdate:</label>
+        <input
+          type="text"
+          id="birthdate"
+          name="birthdate"
+          placeholder="Birthdate"
+          class ="input-dialog"
+        />
+        <label id="active-create">Active Sincc:</label>
+        <input
+          type="text"
+          id="active"
+          name="active"
+          placeholder="Active Name"
+          class ="input-dialog"
+        />
+        <label id="genres-create">Genres:</label>
+        <input
+          type="text"
+          id="genres"
+          name="genres"
+          placeholder="Genres"
+          class ="input-dialog"
+        />
+        <label id="labels-create">Labels:</label>
+        <input
+          type="text"
+          id="labels"
+          name="labels"
+          placeholder="Labels"
+          class ="input-dialog"
+        />
+        <label id="website-create">Website:</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          placeholder="Website"
+          class ="input-dialog"
+        />
+        <label id="description-create">Description:</label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          placeholder="Description"
+          class ="input-dialog"
+        />
+        <button>Add Artist</button>
+      </form>
+    </dialog>
+
+    <dialog id = "dialog-update-artist" method="dialog">
+      <h3>Update Artist:</h3>
+      <form id="form-update-artist" method="dialog">
+        <label for="title-update">Editing:</label>
+        <p id="dialog-update-artist-title"></p>
+        <label id="name-update">Artist Name:</label>
+        <input
+          type="text"
+          id="name-update"
+          name="name"
+          placeholder="Artist Name"
+          class ="input-dialog"
+        />
+        <label for="image-update">Image:</label>
+        <input
+          type="URL"
+          id="image-update"
+          name="image"
+          placeholder="please Enter URL"
+          class ="input-dialog"
+        />
+        <label id="birthdate">Birthdate:</label>
+        <input
+          type="text"
+          id="birthdate-update"
+          name="birthdate"
+          placeholder="Birthdate"
+          class ="input-dialog"
+        />
+        <label id="active-update">Active Sincc:</label>
+        <input
+          type="text"
+          id="active-update"
+          name="active"
+          placeholder="Active Name"
+          class ="input-dialog"
+        />
+        <label id="genres-update">Genres:</label>
+        <input
+          type="text"
+          id="genres-update"
+          name="genres"
+          placeholder="Genres"
+          class ="input-dialog"
+        />
+        <label id="labels-update">Labels:</label>
+        <input
+          type="text"
+          id="labels-update"
+          name="labels"
+          placeholder="Labels"
+          class ="input-dialog"
+        />
+        <label id="website-update">Website:</label>
+        <input
+          type="text"
+          id="website-update"
+          name="website"
+          placeholder="Website"
+          class ="input-dialog"
+        />
+        <label id="description-update">Description:</label>
+        <input
+          type="text"
+          id="description-update"
+          name="description"
+          placeholder="Description"
+          class ="input-dialog"
+        />
+        <button>Update Post</button>
+      </form>
+      </dialog>
+
+    <dialog id = "dialog-delete-artist" method="dialog">
+      <h3>Delete Artist?</h3>
+      <p id="dialog-delete-artist-title"></p>
+        <form method="dialog" id="form-delete-artist">
+          <button type="button" class="btn-cancel">No</button>
+          <button>Yes</button>
+      </form>
+      </dialog>
+
+    <script src="main.js"></script>
+  </body>
+</html>

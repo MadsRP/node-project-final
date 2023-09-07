@@ -1,0 +1,5 @@
+Properties - name, birthdate, activeSince, genres, labels, website, image, shortDescription
+Information about artist shows after deletion
+
+Fix ID + Favorite 
+Fix Edit
