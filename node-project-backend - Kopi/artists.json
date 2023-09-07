@@ -1,0 +1,14 @@
+[
+  {
+    "favorite": false,
+    "name": "Van Halen",
+    "uid": 1694114179702,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Eddie_Van_Halen_at_the_New_Haven_Coliseum.jpg/220px-Eddie_Van_Halen_at_the_New_Haven_Coliseum.jpg",
+    "birthdate": "April 27th",
+    "active": "A long fucking time",
+    "genres": "Rock",
+    "labels": "Rock Labels",
+    "website": "www.website.com",
+    "description": "Van Halen makes rock music!"
+  }
+]
